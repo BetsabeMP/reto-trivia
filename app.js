@@ -1,39 +1,159 @@
-window.onload = function() {
-    var name = prompt("¿cuál es tu nombre?");
-    document.getElementById("name").innerText = name;
 
-    var wantToPlay = prompt("¿quieres jugar? s/n");
-    if (wantToPlay.toLowerCase() == "s") {
-        var answer1 = prompt("¿han egresado hombres en Laboratoria? s/n");
-        if (answer1.toLowerCase() == "n") {
-            document.getElementById("rightAnswersText").innerHTML =
+
+function check(){
+
+
+	var question1 = document.quiz.question1.value;
+
+	var question2 = document.quiz.question2.value;
+
+	var question3 = document.quiz.question3.value;
+
+  
+	if (question1 === "Santiago" || question1 === "SANTIAGO" ||  question1 === "santiago")  {
+     
+    
+    document.getElementById("rightAnswersText").innerHTML =
                 document.getElementById("rightAnswersText").innerHTML +
                 "<div class='answer'>" +
-                "<p>No han egresado hombres</p>"
+                "<p>Es Santiago</p>"
             "</div>";
-        } else {
-            document.getElementById("wrongAnswersText").innerHTML =
+    
+  } else {
+    
+    
+     document.getElementById("wrongAnswersText").innerHTML =
                 document.getElementById("wrongAnswersText").innerHTML +
                 "<div class='answer'>" +
-                "<p>No han egresado hombres</p>"
+                "<p>La unica sede en Chile es en Santiago</p>"
             "</div>";
-        }
-
-        var answer2 = prompt("¿hay laboratoria en concepción? s/n");
-        if (answer2.toLowerCase() == "n") {
-            document.getElementById("rightAnswersText").innerHTML =
-                document.getElementById("rightAnswersText").innerHTML +
-                "<div class='answer'>" +
-                "<p>No hay laboratoria en concepción</p>"
-            "</div>";
-        } else {
-            document.getElementById("wrongAnswersText").innerHTML =
-                document.getElementById("wrongAnswersText").innerHTML +
-                "<div class='answer'>" +
-                "<p>No hay laboratoria en concepción</p>"
-            "</div>";
-        }
-    } else {
-        document.getElementById("warningMessage").innerText = "Bueno Chao";
-    }
 }
+
+	if (question2 === "Frontend Developer,UX Designer") {
+
+	
+    
+    document.getElementById("rightAnswersText").innerHTML =
+                document.getElementById("rightAnswersText").innerHTML +
+                "<div class='answer'>" +
+                "<p>Frontend Developer, UX Designer</p>"
+            "</div>";
+    
+    
+     } else {
+    
+       document.getElementById("wrongAnswersText").innerHTML =
+                document.getElementById("wrongAnswersText").innerHTML +
+                "<div class='answer'>" +
+                "<p> Ambos dos Frontend Developer,UX Designer</p>"
+            "</div>";
+       
+  
+}	
+
+	if (question3 === "Javascript") {
+
+	
+    document.getElementById("rightAnswersText").innerHTML =
+                document.getElementById("rightAnswersText").innerHTML +
+                "<div class='answer'>" +
+                "<p>Javascript</p>"
+            "</div>";
+    
+     } else {
+    
+  
+       document.getElementById("wrongAnswersText").innerHTML =
+                document.getElementById("wrongAnswersText").innerHTML +
+                "<div class='answer'>" +
+                "<p>No es Java, ni Phyton</p>"
+            "</div>";
+       
+	}
+
+	
+ 
+	document.getElementById("after_submit").style.visibility = "visible";
+	
+
+function check(){
+
+
+	var question1 = document.quiz.question1.value;
+
+	var question2 = document.quiz.question2.value;
+
+	var question3 = document.quiz.question3.value;
+
+  
+	if (question1 === "Santiago" || question1 === "SANTIAGO" ||  question1 === "santiago")  {
+     
+    
+    document.getElementById("rightAnswersText").innerHTML =
+                document.getElementById("rightAnswersText").innerHTML +
+                "<div class='answer'>" +
+                "<p>Es Santiago</p>"
+            "</div>";
+    
+  } else {
+    
+    
+     document.getElementById("wrongAnswersText").innerHTML =
+                document.getElementById("wrongAnswersText").innerHTML +
+                "<div class='answer'>" +
+                "<p>La unica sede en Chile es en Santiago</p>"
+            "</div>";
+}
+
+	if (question2 === "Frontend Developer,UX Designer") {
+
+	
+    
+    document.getElementById("rightAnswersText").innerHTML =
+                document.getElementById("rightAnswersText").innerHTML +
+                "<div class='answer'>" +
+                "<p>Frontend Developer, UX Designer</p>"
+            "</div>";
+    
+    
+     } else {
+    
+       document.getElementById("wrongAnswersText").innerHTML =
+                document.getElementById("wrongAnswersText").innerHTML +
+                "<div class='answer'>" +
+                "<p> Ambos dos Frontend Developer,UX Designer</p>"
+            "</div>";
+       
+  
+}	
+
+	if (question3 === "Javascript") {
+
+	
+    document.getElementById("rightAnswersText").innerHTML =
+                document.getElementById("rightAnswersText").innerHTML +
+                "<div class='answer'>" +
+                "<p>Javascript</p>"
+            "</div>";
+    
+     } else {
+    
+  
+       document.getElementById("wrongAnswersText").innerHTML =
+                document.getElementById("wrongAnswersText").innerHTML +
+                "<div class='answer'>" +
+                "<p>No es Java, ni Phyton</p>"
+            "</div>";
+       
+	}
+
+	
+ 
+	document.getElementById("after_submit").style.visibility = "visible";
+	document.getElementById("Empezar").value
+
+
+    }
+
+
+    }
