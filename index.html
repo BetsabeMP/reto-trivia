@@ -1,92 +1,42 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-
-        <div>
-                <label for='nombre'>Nombre</label>
-                <input type="text" id = nombre/>
-              <input id='button1' type='button' value="Empezar" />
-
-
-<title></title>
-
-<link href ="style.css" rel ="stylesheet">
-
-<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-
-<script src = "main.js"></script>
-
-
-
+    <meta charset=utf-8>
+    <title>Trivia</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
-
-
 
 <body>
 
-<h1></h1>
-
-<p id = "warningMessage"></p>
-
-<form id = "quiz" name = "quiz">
-
-
-<p class = "questions">¿Dónde se encuentran la sede de Laboratoria en Chile?</p>
-
-<input id = "textbox" type = "text" name = "question1">
-
-
-
-<p class = "questions">¿Cuál o cuáles son los perfiles de nuestras egresadas?</p>
-
-<input type = "radio" id = "mc" name = "question2" value = "Frontend Developer"> Frontend Developer<br>
-<input type = "radio" id = "mc" name = "question2" value = "UX Designer"> UX Designer<br>
-<input type = "radio" id = "mc" name = "question2" value = "Frontend Developer, UX Designer"> Frontend Developer, UX Designer<br>
-
-
-<p class = "questions">¿Qué lenguaje aprenderás en el Bootcamp?</p>
-
-<input type = "radio" id = "mc" name = "question3" value = "Java"> Java<br>
-<input type = "radio" id = "mc" name = "question3" value = "Phyton"> Phyton<br>
-<input type = "radio" id = "mc" name = "question3" value = "Javascript"> Javascript<br>
-
-
-
-
-<input id = "button" type = "button" value = "Ver resultados" onclick = "check();">
-
-
-
-
-
-</form>
-
-
-
-<div id = "after_submit">
-<div id="scoreBoard">
+       <div>
+                <label for='nombre'>Nombre</label>
+                <input type="text" id = nombre/>
+              <input id='button1' type='button' value="Empezar" /
+              
+              
+    <div id="upperBar">
+        <span id="nameLabel"></span>
+        <span id="name"></span>
+    </div>
+    <div id="scoreBoard">
         <div id="rightAnswers">
             <h2>Respuestas correctas</h2>
             <div id="rightAnswersText">
-              
-               </div>
-        </div>  
-  
-   <div id="wrongAnswers">
+
+            </div>
+        </div>
+        <div id="wrongAnswers">
             <h2>Respuestas incorrectas</h2>
             <div id="wrongAnswersText">
 
             </div>
-        </div>          
-  
-
-
-
-
-</div>
+        </div>
+    </div>
+    <div id="warningBlock">
+        <p id="warningMessage"></p>
+    </div>
+    <script src="app.js"></script>
+</body>
 
 </html>
-
-
-
-</body>
